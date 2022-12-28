@@ -1,10 +1,13 @@
-# COMANDOS DOCKER PARA CRIAR IMAGEM
-docker build -t rafael --build-arg DEFAULT_ROOTPASS=docker@123 .
+# Docker > Debian + Nginx + SSH
 
-# DOCKER RUN NAS PORTAS PARA ACESSO VIA LOCALHOST E SSH
-docker run -d -p 3000:80 -p 3022:22 --env ROOTPASS=dev@123 rafael
+## Comando para buildar a imagem pelo Dockerfile
+`docker build -t rafael --build-arg DEFAULT_ROOTPASS=docker@123`
 
-# VARIAVEIS DE AMBIENTE PADRAO
+## Comando para subir a imagem
+DOCKER RUN NAS PORTAS PARA ACESSO VIA LOCALHOST E SSH
+`docker run -d -p 3000:80 -p 3022:22 --env ROOTPASS=dev@123 rafael`
+
+## VARIAVEIS DE AMBIENTE PADRÃO
 - DEFAULT_ROOTPASS
 - ROOTPASS
 
